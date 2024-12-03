@@ -1,0 +1,75 @@
+<div class="pagina-crud-container">
+  <header class="hero-section">
+    <i class="bi bi-mortarboard-fill hero-icon"></i>
+    <h1>Sistema de Gerenciamento de Alunos</h1>
+    <p class="hero-text">
+      Gerencie eficientemente o cadastro de alunos com nosso sistema completo e
+      intuitivo
+    </p>
+  </header>
+
+  <div class="dashboard-grid">
+    <div class="feature-card">
+      <div class="card-icon">
+        <i class="bi bi-plus-circle"></i>
+      </div>
+      <h3>Criar</h3>
+      <p>
+        Adicione novos alunos com informações como matrícula, nome e data de
+        nascimento.
+      </p>
+      <a routerLink="/criarAluno" class="card-link">Cadastrar Aluno</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <i class="bi bi-eye"></i>
+      </div>
+      <h3>Visualizar</h3>
+      <p>Acesse a lista completa de alunos e suas informações detalhadas.</p>
+      <a routerLink="/listarAluno" class="card-link">Ver Alunos</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <i class="bi bi-pencil"></i>
+      </div>
+      <h3>Atualizar</h3>
+      <p>Mantenha os dados dos alunos sempre atualizados no sistema.</p>
+      <a routerLink="/listarAluno" class="card-link">Gerenciar Alunos</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="card-icon">
+        <i class="bi bi-trash"></i>
+      </div>
+      <h3>Excluir</h3>
+      <p>Remova registros de alunos quando necessário.</p>
+      <a routerLink="/listarAluno" class="card-link">Gerenciar Alunos</a>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="alert-card">
+      <i class="bi bi-exclamation-triangle"></i>
+      <div class="alert-content">
+        <h3>Aviso Importante</h3>
+        <p>
+          A exclusão de alunos é uma ação irreversível. Confirme os dados antes
+          de excluir.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-actions">
+    <button class="action-button primary" routerLink="/listarAluno">
+      <i class="bi bi-person-lines-fill"></i>
+      Lista de Alunos
+    </button>
+    <button class="action-button secondary" routerLink="/criarAluno">
+      <i class="bi bi-plus-lg"></i>
+      Novo Aluno
+    </button>
+  </div>
+</div>

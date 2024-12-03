@@ -1,0 +1,39 @@
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a routerLink="/" class="navbar-brand">Academify</a>
+      <button class="navbar-toggle" (click)="toggleMobileMenu()">
+        <span class="navbar-toggle-icon">&#9776;</span>
+      </button>
+      <ul class="nav-list" [class.active]="isMobileMenuOpen">
+        <li class="nav-item">
+          <a
+            routerLink="/paginaInicial"
+            routerLinkActive="active"
+            class="nav-link"
+          >
+            <i class="icon home-icon"></i>Página Inicial
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/listarAluno"
+            routerLinkActive="active"
+            class="nav-link"
+          >
+            <i class="icon list-icon"></i>Listar Alunos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/criarAluno"
+            routerLinkActive="active"
+            class="nav-link"
+          >
+            <i class="icon add-icon"></i>Criar Alunos
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</body>

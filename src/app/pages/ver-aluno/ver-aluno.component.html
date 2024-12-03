@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="aluno-detalhe">
+    <h2>{{ aluno?.nome }}</h2>
+    <p><strong>Matrícula:</strong> {{ aluno?.matricula }}</p>
+    <p>
+      <strong>Nascimento:</strong> {{ aluno?.nascimento | date : "fullDate" }}
+    </p>
+    <p>
+      <strong>Data/Hora Cadastro:</strong>
+      {{ aluno?.dataHoraCadastro | date : "dd/MM/yyyy HH:mm:ss" }}
+    </p>
+  </div>
+
+  <button class="btn">
+    <a routerLink="/listarAluno">Voltar</a>
+  </button>
+</div>
